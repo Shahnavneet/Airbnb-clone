@@ -1,0 +1,104 @@
+.footer-section {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgb(245, 239, 239);
+}
+.ftr-heading {
+  padding: 1rem;
+}
+.ftr-heading span {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+.ftr-search-list {
+  padding: 1rem;
+  padding-top: 0;
+}
+.ftr-search-options {
+  width: 100%;
+  border-bottom: 1px solid rgb(120, 118, 118);
+}
+.ftr-search-options-items {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  color: rgb(95, 94, 94);
+}
+.ftr-search-options-items li {
+  padding: 0.8rem;
+}
+.ftr-search-options-places {
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  border-bottom: 1px solid rgb(120, 118, 118);
+}
+.rentals {
+  width: 15%;
+  height: 10%;
+  padding: 1rem;
+}
+.rental-details {
+  list-style: none;
+}
+.rental-place {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.rental-type {
+  color: rgb(161, 159, 159);
+}
+.ftr-bar {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid rgb(120, 118, 118);
+}
+.ftr-options {
+  padding: 5rem;
+}
+.ftr-options-items {
+  list-style: none;
+}
+.ftr-options span {
+  font-weight: 500;
+}
+.ftr-options-items li {
+  padding: 0.3rem 0;
+}
+.ftr-options-items a {
+  text-decoration: none;
+  color: rgb(95, 94, 94);
+}
+.copy-right svg {
+  width: 1rem;
+  height: 1rem;
+}
+.copy-right {
+  list-style: none;
+  display: flex;
+  padding: 1rem 0;
+  gap: 0.5rem;
+}
+.last-block {
+  display: flex;
+  justify-content: space-between;
+}
+.right-block {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.right-block-items {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 1rem 0;
+}
+.right-block-items svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.ftr-options-items li:hover {
+  text-decoration-line: underline;
+}

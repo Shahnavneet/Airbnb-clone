@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air bnb</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="icon" href="../assets/favicon.png" />
+    <link rel="stylesheet" href="../styles/home.css" />
+    <link rel="stylesheet" href="../styles/footer.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header class="main-header">
+      <div class="header-strip1">
+        <div class="header-logo">
+          <a href="#"><img src="../assets/logo.jpg" alt="logo" /></a>
+        </div>
+        <div class="main-navigation">
+          <ul class="nav-list">
+            <li class="nav-item active">Stays</li>
+            <li class="nav-item">Experiences</li>
+            <li class="nav-item"><a href="#">Online Experiences</a></li>
+          </ul>
+        </div>
+        <div class="header-strip1-right-block">
+          <span class="airbnb-home-link"><a>Airbnb your home </a></span>
+          <span class="airbnb-lang-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z"
+              ></path>
+            </svg>
+          </span>
+          <div class="sign-in-modal-btn">
+            <a href="#"><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+              ></path>
+            </svg></a>
+            <a href="#"><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z"
+              ></path>
+            </svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="header-strip2">
+        <div class="main-search-bar">
+          <div class="search-option-item option-item1">
+            <label for="" class="dest">Where</label>
+            <input
+              type="text"
+              id="dest"
+              name="dest"
+              placeholder="Search destination"
+            />
+          </div>
+          <div class="search-option-item option-item2">
+            <label for="check-in">Check In </label>
+            <span>Add dates </span>
+          </div>
+          <div class="search-option-item option-item3">
+            <label for="check-out">Check Out </label>
+            <span>Add dates </span>
+          </div>
+          <div class="search-option-item option-item4">
+            <div class="option-item4-child1">
+              <label for="check-out">Who </label>
+              <span>Add Guest </span>
+            </div>
+            <button class="search-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                <path
+                  d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="location-cards-section">
+      <div class="cards-wrapper">
+        <div class="location-cards">
+          <div class="location-img">
+            <img src="../assets/card1.jpg" alt="#" />
+          </div>
+          <div class="location-desc">
+            <div class="location-desc-b1">
+              <span class="location-name">Munar ,India</span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"
+                  ></path>
+                </svg>
+                <span>4.6</span>
+              </span>
+            </div>
+            <div class="location-desc-b2">
+              <p>1,473 kilometers Away</p>
+              <p>16-21 March</p>
+            </div>
+            <div class="location-desc-b3">
+              <span class="price">&#8377 13,000 </span>
+              <span>Night</span>
+            </div>
+          </div>
+        </div>
+         <div class="location-cards">
+          <div class="location-img">
+            <img src="../assets/card1.jpg" alt="#" />
+          </div>
+          <div class="location-desc">
+            <div class="location-desc-b1">
+              <span class="location-name">Munar ,India</span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"
+                  ></path>
+                </svg>
+                <span>4.6</span>
+              </span>
+            </div>
+            <div class="location-desc-b2">
+              <p>1,473 kilometers Away</p>
+              <p>16-21 March</p>
+            </div>
+            <div class="location-desc-b3">
+              <span class="price">&#8377 13,000 </span>
+              <span>Night</span>
+            </div>
+          </div>
+        </div>
+         <div class="location-cards">
+          <div class="location-img">
+            <img src="../assets/card1.jpg" alt="#" />
+          </div>
+          <div class="location-desc">
+            <div class="location-desc-b1">
+              <span class="location-name">Munar ,India</span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"
+                  ></path>
+                </svg>
+                <span>4.6</span>
+              </span>
+            </div>
+            <div class="location-desc-b2">
+              <p>1,473 kilometers Away</p>
+              <p>16-21 March</p>
+            </div>
+            <div class="location-desc-b3">
+              <span class="price">&#8377 13,000 </span>
+              <span>Night</span>
+            </div>
+          </div>
+        </div>
+         <div class="location-cards">
+          <div class="location-img">
+            <img src="../assets/card1.jpg" alt="#" />
+          </div>
+          <div class="location-desc">
+            <div class="location-desc-b1">
+              <span class="location-name">Munar ,India</span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"
+                  ></path>
+                </svg>
+                <span>4.6</span>
+              </span>
+            </div>
+            <div class="location-desc-b2">
+              <p>1,473 kilometers Away</p>
+              <p>16-21 March</p>
+            </div>
+            <div class="location-desc-b3">
+              <span class="price">&#8377 13,000 </span>
+              <span>Night</span>
+            </div>
+          </div>
+        </div>
+         <div class="location-cards">
+          <div class="location-img">
+            <img src="../assets/card1.jpg" alt="#" />
+          </div>
+          <div class="location-desc">
+            <div class="location-desc-b1">
+              <span class="location-name">Munar ,India</span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"
+                  ></path>
+                </svg>
+                <span>4.6</span>
+              </span>
+            </div>
+            <div class="location-desc-b2">
+              <p>1,473 kilometers Away</p>
+              <p>16-21 March</p>
+            </div>
+            <div class="location-desc-b3">
+              <span class="price">&#8377 13,000 </span>
+              <span>Night</span>
+            </div>
+          </div>
+        </div>
+         <div class="location-cards">
+          <div class="location-img">
+            <img src="../assets/card1.jpg" alt="#" />
+          </div>
+          <div class="location-desc">
+            <div class="location-desc-b1">
+              <span class="location-name">Munar ,India</span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"
+                  ></path>
+                </svg>
+                <span>4.6</span>
+              </span>
+            </div>
+            <div class="location-desc-b2">
+              <p>1,473 kilometers Away</p>
+              <p>16-21 March</p>
+            </div>
+            <div class="location-desc-b3">
+              <span class="price">&#8377 13,000 </span>
+              <span>Night</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-more-block">
+        <h3>Continue Exploring Rooms</h3>
+        <button class="show-more">Show More</button>
+      </div>
+    </section>
+    <footer class="footer-section">
+      <div class="ftr-heading">
+        <span>Inspiration for future getaways</span>
+      </div>
+      <div class="ftr-search-list">
+        <div class="ftr-search-options">
+          <ul class="ftr-search-options-items" >
+            <li>Popular</li>
+            <li>Arts & Culture</li>
+            <li>Outdoors</li>
+            <li>Mountains</li>
+            <li>Beach</li>
+            <li>Unique Stays</li>
+            <li>Categories</li>
+            <li>Things to do</li>
+          </ul>
+        </div>
+        <div class="ftr-search-options-places">
+          <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            <div class="rentals">
+            <ul class="rental-details">
+            <li class="rental-place">Cannmore</li>
+            <li class="rental-type">Appartment Rentals</li>
+            </ul>
+          </div>
+            
+        </div>
+      </div>
+      <div class="ftr-bar">
+        <div class="ftr-options">
+          <span>Support</span>
+          <ul class="ftr-options-items">
+            <li><a href="">Help center</a></li>
+            <li><a href="">Aircover</a></li>
+            <li><a href="">AntiDiscrimination</a></li>
+            <li><a href="">Disabilitysupport</a></li>
+            <li><a href="">Cancelation option</a></li>
+            <li><a href="">Report Neighbourhood Concern</a></li>
+          </ul>
+        </div>
+        <div class="ftr-options">
+          <span>Hosting</span>
+          <ul class="ftr-options-items">
+            <li><a href="">Airbnb yourhome</a></li>
+            <li><a href="">Airbnb cover hosts</a></li>
+            <li><a href="">Hosting Resources</a></li>
+            <li><a href="">Comunity forun</a></li>
+            <li><a href="">Hosting Responsibly</a></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="ftr-options">
+          <span>Airbnb</span>
+          <ul class="ftr-options-items">
+            <li><a href="">News Room</a></li>
+            <li><a href="">New Feature</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Investors</a></li>
+            <li><a href="">Airbnb.org Emergency stays</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="last-block">
+        <div class="left-block"> 
+          <ul class="copy-right">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg"  fill="#000000" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM96,128a32,32,0,0,0,57.6,19.2,8,8,0,0,1,12.8,9.61,48,48,0,1,1,0-57.62,8,8,0,0,1-12.8,9.61A32,32,0,0,0,96,128Z"></path></svg>
+               <span>2024 Airbnb.inc.</span>
+            </li>
+            <li>. Privacy</li>
+            <li>. Terms</li>
+            <li>. Sitemap</li>
+            <li>. Company Details</li>
+          </ul>
+        </div>
+        <div class="right-block"> 
+          <div class="lang right-block-items">
+            <svg xmlns="http://www.w3.org/2000/svg"  fill="#000000" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z"></path></svg>
+            <span>ENGLISH(IN)</span>
+          </div>
+          
+          <div class="crncy right-block-items">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z"></path></svg>
+          <span>INR</span>
+          </div>
+          <div class="scl-media right-block-items">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256"><path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg"  fill="#000000" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg>
+          </div>
+        </div >
+      </div>
+    </footer>
+  </body>
+</html>

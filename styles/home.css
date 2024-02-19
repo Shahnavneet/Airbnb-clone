@@ -1,0 +1,76 @@
+.cards-wrapper {
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.location-cards {
+  width: 22%;
+  height: 25rem;
+}
+.location-img {
+  width: 100%;
+  height: 75%;
+  border-radius: 10px;
+}
+.location-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.location-desc {
+  width: 100%;
+  height: 25%;
+}
+.location-desc-b1 {
+  width: 100%;
+  padding: 0.3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.location-name {
+  font-weight: 900;
+}
+
+.location-desc-b1 svg {
+  width: 18px;
+  height: 18px;
+}
+.location-desc-b1 span {
+  font-weight: 500;
+  color: #333;
+}
+.location-desc-b2 {
+  font-size: 15px;
+  color: rgb(120, 118, 118);
+}
+.location-desc-b3 {
+  width: 100%;
+  padding: 0.3rem 0;
+  font-size: 14px;
+}
+.location-desc-b3 .price {
+  font-weight: 800;
+}
+.show-more-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 0;
+}
+.show-more-block h3 {
+  font-size: 1.05rem;
+}
+.show-more-block button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
